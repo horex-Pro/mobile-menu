@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#000000bd,#000000e7), url(../image/andyone--WW8jBak7bo-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+}
+
+.logo img{
+    width: 100%;
+
+}
+
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+}
+
+.line{
+    width: inherit;
+    height: 5px;
+    background-color: #16c3cf;
+    border-radius: 25px;
+}
+
+.line-2{
+    height: 3px;
+}
+
+.btn-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
