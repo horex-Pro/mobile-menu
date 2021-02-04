@@ -38,6 +38,8 @@
     position: fixed;
     top: 40px;
     right: 50px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .line{
@@ -103,4 +105,23 @@
     right: 0;
     transform: rotateY(-90deg);
     transform-origin:right;
+}
+.top-nav{
+    height: 15vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.7)) ,url(../image/donald-giannatti-71mqMtrfYP8-unsplash.jpg) no-repeat 50% 0;
+    background-size: cover;
+    position:fixed;
+    top: 0;
+    z-index: 50;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    width: 80%;
+    background-color: #ccc;
+    list-style-type: none;
+    margin: auto;
 }
