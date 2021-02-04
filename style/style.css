@@ -121,7 +121,42 @@
     align-items: center;
     height: 15vh;
     width: 80%;
-    background-color: #ccc;
     list-style-type: none;
     margin: auto;
+}
+
+.nav-list li{
+    perspective: 500px;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ccc;
+    background-color: #000;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    position: relative;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+.nav-link:hover{
+    transform: rotateX(90deg);
+}
+
+.nav-link::after{
+    content:attr(data-text);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: #000;
+    padding:inherit;
+    color: #16c3cf;
+    transform: rotateX(-90deg);
+    transform-origin: top;
 }
